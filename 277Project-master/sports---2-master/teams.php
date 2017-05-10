@@ -158,33 +158,35 @@ $queryListOfClubs= "select clubName  from club where 1";
                     </h2>
                     <hr>
                 </div>
-                <div class="col-sm-4 text-center" onclick="getTeamPlayer()">
-                    <a href="#" >
-                      <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                      <h3>Players </h3>
-                    </a>
-                </div>
                 <div class="col-sm-4 text-center" onclick="getTeamRecord()">
                     <a href="#" >
-                      <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                      <img class="img-responsive" src="img/info.png" alt="">
                       <h3>Info   </h3>
                     </a>
                 </div>
+
+                <div class="col-sm-4 text-center" onclick="getTeamPlayer()">
+                    <a href="#" >
+                      <img class="img-responsive" src="img/player.png" alt="">
+                      <h3>Players </h3>
+                    </a>
+                </div>
+
                 <div class="col-sm-4 text-center" onclick="getTeamMatchesHistory()">
                     <a href="#" >
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                    <img class="img-responsive" src="img/games.png" alt="">
                     <h3>Games History</h3>
                   </a>
                 </div>
                 <div class="col-sm-4 text-center" onclick="getTeamStaff()">
                     <a href="#" >
-                      <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                      <img class="img-responsive" src="img/staff.png" alt="">
                       <h3>Staff </h3>
                     </a>
                 </div>
                 <div class="col-sm-4 text-center" onclick="getTeamTournamnet()">
                     <a href="#" >
-                      <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                      <img class="img-responsive" src="img/tournament.png" alt="">
                       <h3>Tournaments   </h3>
                     </a>
                 </div>

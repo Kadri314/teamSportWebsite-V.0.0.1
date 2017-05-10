@@ -161,19 +161,19 @@ $queryListOfClubs= "select clubName  from club where 1";
                   </div>
                   <div class="col-sm-4 text-center" onclick="getClubInfo()">
                       <a href="#" >
-                        <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                        <img class="img-responsive" src="img/info.png" alt="">
                         <h3>Info </h3>
                       </a>
                   </div>
                   <div class="col-sm-4 text-center" onclick="getClubTeam()">
                       <a href="#" >
-                        <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                        <img class="img-responsive" src="img/teams.png" alt="">
                         <h3>Teams   </h3>
                       </a>
                   </div>
                   <div class="col-sm-4 text-center" onclick="getClubCourt()">
                       <a href="#" >
-                      <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                      <img class="img-responsive" src="img/court.png" alt="">
                       <h3>Courts</h3>
                     </a>
                   </div>

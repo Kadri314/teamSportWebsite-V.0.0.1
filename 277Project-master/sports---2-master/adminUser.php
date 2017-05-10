@@ -176,10 +176,10 @@ $queryListOfSponsors="select sponsorName from sponsor where 1";
                     </h2>
                     <hr/>
                 </div>
-					<h1 id="cscs">Delete Section:</h1>
+					<h1 class="cscs">Deletion Section:</h1>
 					<!-- FOR teams  -->
 							<h3>Remove A Team</h3>
-							<span>List Of Teams:</span>
+							<label>List Of Teams:</label>
 							<select name="listOfTeams" id="selectedTeamToRemove">
 								<?php
 									$rows=$db->query($queryListOfTeams);
@@ -190,12 +190,12 @@ $queryListOfSponsors="select sponsorName from sponsor where 1";
 									}
 								 ?>
 							</select><br/>
-							<span>Delete Selected Team  : </span>
+							<label>Delete Selected Team  : </label>
 							<button onclick="rmTeam()" />Remove Selected Team</button><br/>
 							<hr/>
 						<!-- delete Player -->
 								<h3>Remove A Player</h3>
-								<span>List Of Players:</span>
+								<label>List Of Players:</label>
 								<select id="selectedPlayerToRemove">
 									<?php
 										$rows=$db->query($queryListOfPlayers);
@@ -206,12 +206,12 @@ $queryListOfSponsors="select sponsorName from sponsor where 1";
 										}
 									 ?>
 								</select><br/>
-								<span>Delete Selected Player: </span>
+								<label>Delete Selected Player: </label>
 								<button onclick="rmPlayer()" />Remove Selected player</button><br/>
 								<hr/>
 								<!-- delete a staff -->
 								<h3>Remove A Staff</h3>
-								<span>List Of Staff:</span>
+								<label>List Of Staff:</label>
 								<select id="selectedStaffToRemove">
 									<?php
 										$rows=$db->query($queryListOfStaff);
@@ -222,12 +222,12 @@ $queryListOfSponsors="select sponsorName from sponsor where 1";
 										}
 									 ?>
 								</select><br/>
-								<span>Delete Selected Staff: </span>
+								<label>Delete Selected Staff: </label>
 								<button onclick="rmStaff()" />Remove Selected Staff</button><br/>
 								<hr/>
 								<!-- delete sponsors -->
 								<h3>Remove A Sponsor</h3>
-								<span>List Of Sponsors:</span>
+								<label>List Of Sponsors:</label>
 								<select id="selectedSponsorToRemove">
 									<?php
 										$rows=$db->query($queryListOfSponsors);
@@ -238,12 +238,12 @@ $queryListOfSponsors="select sponsorName from sponsor where 1";
 										}
 									 ?>
 								</select><br/>
-								<span>Delete Selected sponsor  : </span>
+								<label>Delete Selected sponsor  : </label>
 								<button onclick="rmSponsor()" />Remove Selected Sponsor</button><br/>
 								<hr/>
 						<!-- delete torunamnet -->
 						<h3>Remove A Tournament</h3>
-						<span>List Of Tournaments:</span>
+						<label>List Of Tournaments:</label>
 						<select id="selectedTournamentToRemove">
 							<?php
 								$rows=$db->query($queryListOfTorunamnets);
@@ -254,24 +254,24 @@ $queryListOfSponsors="select sponsorName from sponsor where 1";
 								}
 							 ?>
 						</select><br/>
-						<span>Delete Selected Torunamnet  : </span>
+						<label>Delete Selected Torunamnet  : </label>
 						<button onclick="rmTournament()" />Remove Selected Tournament</button><br/>
 						<hr/>
 					<!-- insert -->
-					<h2>Insert Section:</h2>
+					<h2 class="cscs">Insertion Section:</h2>
 
 					<!-- insert Team -->
 
-						<h3>Insert a Team:</h3>
+						<h3>Add a Team:</h3>
 						<form method="post" action="modifyDB.php">
-							<span>Team Name:</span> <input type="text" name="teamName"><br/>
-							<span>Team Type:</span>
+							<label>Team Name:</label> <input type="text" name="teamName"><br/>
+							<label>Team Type:</label>
 							<select name="sportName">
 								<option>Soccer</option>
 								<option>BasketBall</option>
 								<option>Futsal</option>
-							</select>
-							<span>Club Name:</span>
+							</select><br/>
+							<label>Club Name:</label>
 							<select name="selectedClub">
 								<?php
 									$rows=$db->query($queryListOfClubs);
@@ -286,48 +286,48 @@ $queryListOfSponsors="select sponsorName from sponsor where 1";
 						</form>
 						<hr/>
 
-						<h3>Insert a Club:</h3>
+						<h3>Add a Club:</h3>
 						<!-- Insert Club  -->
 						<form method="post" action="modifyDB.php">
-							<span>President Name:</span> <input type="text" name="presidentName"><br/>
-							<span>Club Name:</span> <input type="text" name="clubName"><br/>
-							<span>Date Of Creation:</span> <input type="date" name="foundationDate"><br/>
-							<span>Club Location:</span> <input type="text" name="location"><br/>
+							<label>President Name:</label> <input type="text" name="presidentName"><br/>
+							<label>Club Name:</label> <input type="text" name="clubName"><br/>
+							<label>Date Of Creation:</label> <input type="date" name="foundationDate"><br/>
+							<label>Club Location:</label> <input type="text" name="location"><br/>
 							<input type="submit" name="insertClub"><br/>
 						</form>
 
 						<!-- Reach Here  -->
 						<hr/>
 
-						<h3>Insert a Tournament:</h3>
+						<h3>Add a Tournament:</h3>
 
 						<!-- inserting Tournament -->
 						<form method="post" action="modifyDB.php">
-							<span>Tournament Name:</span> <input type="text" name="tournamentName"><br/>
-							<span>Tournament Type:</span>
+							<label>Tournament Name:</label> <input type="text" name="tournamentName"><br/>
+							<label>Tournament Type:</label>
 							<select name="tournamentType">
 								<option>Soccer</option>
 								<option>BasketBall</option>
 								<option>Futsal</option>
 							</select><br/>
-							<span>Tournament Prize:</span> <input type="number" name="prize"> $<br/>
-							<span>Starting Date:</span> <input type="date" name="startingDate"> <br/>
-							<span>Ending Date :</span> <input type="date" name="endingDate"> <br/>
-							<span>Number of Rounds:</span> <input type="number" name="numberOfRounds"><br/>
+							<label>Tournament Prize:</label> <input type="number" name="prize"> $<br/>
+							<label>Starting Date:</label> <input type="date" name="startingDate"> <br/>
+							<label>Ending Date :</label> <input type="date" name="endingDate"> <br/>
+							<label>Number of Rounds:</label> <input type="number" name="numberOfRounds"><br/>
 							<input type="submit" name="insertTournament"><br/>
 
 					</form>
 						<hr/>
 
-						<h3>Insert a player:</h3>
+						<h3>Add a player:</h3>
 
 						<!-- Inserting A player -->
 						<form method="post" action="modifyDB.php">
 
-							<span>First Name:</span> <input type="text" name="firstName"><br/>
-							<span>Last name:</span> <input type="text" name="lastName"><br/>
-							<span>Age:</span> <input type="text" name="age"><br/>
-							<span>Plays In:</span>
+							<label>First Name:</label> <input type="text" name="firstName"><br/>
+							<label>Last name:</label> <input type="text" name="lastName"><br/>
+							<label>Age:</label> <input type="text" name="age"><br/>
+							<label>Plays In:</label>
 							<select name="teamName">
 								<?php
 									$rows=$db->query($queryListOfTeams);
@@ -338,7 +338,7 @@ $queryListOfSponsors="select sponsorName from sponsor where 1";
 									}
 								 ?>
 							</select>'s Team<br/>
-							<span>Team Role:</span>
+							<label>Team Role:</label>
 							<select name="teamRole">
 								<option>Captain</option>
 								<option>Vice Captain</option>
@@ -346,7 +346,7 @@ $queryListOfSponsors="select sponsorName from sponsor where 1";
 								<option>Fourth Captain</option>
 								<option>Starting Captain</option>
 							</select><br/>
-							<span>Team Position:</span>
+							<label>Team Position:</label>
 							<select name="teamPosition">
 								<option>DF</option>
 								<option>MF</option>
@@ -358,14 +358,14 @@ $queryListOfSponsors="select sponsorName from sponsor where 1";
 					</form>
 						<hr/>
 
-						<h3>Insert a staff:</h3>
+						<h3>Add a staff:</h3>
 
 						<!-- inserting staff -->
 						<form method="post" action="modifyDB.php">
-							<span>First Name:</span> <input type="text" name="firstName"><br/>
-							<span>Last name:</span> <input type="text" name="lastName"><br/>
-							<span>Age:</span> <input type="text" name="age"><br/>
-							<span>Works In:</span>
+							<label>First Name:</label> <input type="text" name="firstName"><br/>
+							<label>Last name:</label> <input type="text" name="lastName"><br/>
+							<label>Age:</label> <input type="text" name="age"><br/>
+							<label>Works In:</label>
 							<select name="teamName">
 								<?php
 									$rows=$db->query($queryListOfTeams);
@@ -376,7 +376,7 @@ $queryListOfSponsors="select sponsorName from sponsor where 1";
 									}
 								 ?>
 							</select>'s Team<br/>
-							<span>Staff Role:</span>
+							<label>Staff Role:</label>
 							<select name="role">
 								<option>Prisedent</option>
 								<option>Vice Prisedent</option>
@@ -385,7 +385,7 @@ $queryListOfSponsors="select sponsorName from sponsor where 1";
 								<option>Assistant Manager</option>
 								<option>Fitness</option>
 							</select><br/>
-						<input type="submit" name="insertStaff"><br/>
+						<input type="submit" name="insertStaff" class="button1"><br/>
 				</form>
             </div>
         </div>
