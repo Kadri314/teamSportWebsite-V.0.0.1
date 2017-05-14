@@ -166,6 +166,9 @@ email varchar(50) unique not null,
 password varchar(50),
 isAdmin boolean
 );
+insert into webusers (userName,email,password,isAdmin)
+values 
+('kadri','kadri314@hotmail.com','0000',1);
 
 -- create view section
 
